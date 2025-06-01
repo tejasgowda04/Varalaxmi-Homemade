@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varalaxmi Homemade - Coorg's Finest Chocolates, Wines & Spices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for enhancements */
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516404735524-f0cb88a28a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-amber-50">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2666/2666407.png" alt="Varalaxmi Logo" class="h-10 w-10">
+                <h1 class="ml-2 text-xl font-bold text-amber-800">Varalaxmi Homemade</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-amber-800 hover:text-amber-600 font-medium">Home</a>
+                <a href="#products" class="text-amber-800 hover:text-amber-600 font-medium">Products</a>
+                <a href="#about" class="text-amber-800 hover:text-amber-600 font-medium">About Us</a>
+                <a href="#contact" class="text-amber-800 hover:text-amber-600 font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-amber-800" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white py-2 px-4 shadow-lg" id="mobile-menu">
+            <a href="#home" class="block py-2 text-amber-800 hover:text-amber-600">Home</a>
+            <a href="#products" class="block py-2 text-amber-800 hover:text-amber-600">Products</a>
+            <a href="#about" class="block py-2 text-amber-800 hover:text-amber-600">About Us</a>
+            <a href="#contact" class="block py-2 text-amber-800 hover:text-amber-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-center text-center text-white">
+        <div class="px-4 max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Coorg's Finest Homemade Delicacies</h1>
+            <p class="text-xl md:text-2xl mb-8">Experience the authentic flavors of Coorg with our handmade chocolates, aromatic spices, and exquisite wines</p>
+            <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-12">Our Featured Products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1: Dark Chocolate -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Coorg Dark Chocolate" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Coorg Dark Chocolate</h3>
+                        <p class="text-gray-600 mb-4">Rich, velvety 70% dark chocolate made from locally sourced cocoa beans, with a hint of Coorg coffee.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹250/100g</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Coorg%20Dark%20Chocolate" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Cardamom Powder -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1603569283849-dd1862663bf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Cardamom Powder" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Pure Cardamom Powder</h3>
+                        <p class="text-gray-600 mb-4">Finely ground from the freshest Coorg cardamom pods, perfect for teas, desserts, and savory dishes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹350/100g</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Pure%20Cardamom%20Powder" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3: Dragon Fruit Wine -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1551737823-dfc8495904b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Dragon Fruit Wine" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Dragon Fruit Wine</h3>
+                        <p class="text-gray-600 mb-4">Exquisite semi-sweet wine made from locally grown dragon fruits, aged to perfection.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹1,200/750ml</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Dragon%20Fruit%20Wine" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4: Pepper Powder -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1603048719539-9ec08bf9e8b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                         alt="Pepper Powder" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Coorg Pepper Powder</h3>
+                        <p class="text-gray-600 mb-4">Freshly ground from premium Coorg black pepper, with intense aroma and flavor.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹280/100g</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Coorg%20Pepper%20Powder" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5: Coffee Chocolate -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1606313564205-1641384c7293?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" 
+                         alt="Coffee Chocolate" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Coffee Infused Chocolate</h3>
+                        <p class="text-gray-600 mb-4">Dark chocolate with a punch of Coorg's premium coffee beans, an energizing treat.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹300/100g</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Coffee%20Infused%20Chocolate" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6: Wild Honey -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Wild Honey" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Coorg Wild Honey</h3>
+                        <p class="text-gray-600 mb-4">Pure, unprocessed honey collected from wild bees in Coorg's lush forests.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-600">₹450/500g</span>
+                            <a href="https://wa.me/918951287551?text=I%20would%20like%20to%20order%20Coorg%20Wild%20Honey" 
+                               class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center transition duration-300">
+                               <i class="fab fa-whatsapp mr-2"></i> Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="catalog.html" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                         alt="Our Kitchen" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-amber-800 mb-6">About Varalaxmi Homemade</h2>
+                    <p class="text-gray-700 mb-4">
+                        Founded in 2010 in the picturesque hills of Coorg, Varalaxmi Homemade began as a small family kitchen creating chocolates, spices, and wines for local communities.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        What started as a passion project quickly grew into a beloved local business as word spread about our authentic flavors and traditional preparation methods.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Today, we continue to handcraft each product with the same love and attention to detail, using only the finest locally sourced ingredients from Coorg's fertile lands.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-600 mr-2"></i>
+                            <span>100% Natural Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-600 mr-2"></i>
+                            <span>Handcrafted with Care</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-600 mr-2"></i>
+                            <span>Traditional Recipes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-amber-600 mr-2"></i>
+                            <span>Locally Sourced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-amber-800 mb-12">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-800 font-bold">R</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Rajesh K.</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The dark chocolate is simply divine! The quality surpasses much more expensive brands. Truly a taste of Coorg's finest."</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-800 font-bold">P</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Priya M.</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The cardamom powder transformed my tea and desserts. The aroma is unmatched! Will definitely order again."</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-amber-200 flex items-center justify-center text-amber-800 font-bold">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Ananya S.</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The dragon fruit wine was the highlight of our anniversary dinner. Unique flavor and wonderful experience ordering from Varalaxmi."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-amber-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                    <p class="mb-6">Have questions or want to place a custom order? Reach out to us through any of these channels:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Our Address</h4>
+                                <p>Varalaxmi Homemade, Madikeri, Coorg, Karnataka - 571201</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Call Us</h4>
+                                <p>+91 8951287551 (Orders and Inquiries)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>orders@varalaxmihomemade.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-4 text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold">WhatsApp</h4>
+                                <p>+91 8951287551 (Fastest response for orders)</p>
+                                <a href="https://wa.me/918951287551" class="inline-block mt-2 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                    Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex justify-between border-b border-amber-700 pb-2">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-amber-700 pb-2">
+                            <span>Saturday</span>
+                            <span>10:00 AM - 4:00 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-amber-700 pb-2">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="h-10 w-10 rounded-full bg-amber-700 hover:bg-amber-600 flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 rounded-full bg-amber-700 hover:bg-amber-600 flex items-center justify-center transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="h-10 w-10 rounded-full bg-amber-700 hover:bg-amber-600 flex items-center justify-center transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">Find Us on Google Maps</h3>
+                        <div class="bg-white p-1 rounded-lg shadow-lg">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madikeri,Coorg&zoom=14&size=600x300&maptype=roadmap&markers=color:red%7C12.4143,75.7396&key=YOUR_API_KEY" 
+                                 alt="Map to our location" class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2666/2666407.png" alt="Varalaxmi Logo" class="h-8 w-8">
+                        <h2 class="ml-2 text-xl font-bold">Varalaxmi Homemade</h2>
+                    </div>
+                    <p class="mt-2 text-amber-200 text-sm">Since 2010 • Proudly Made in Coorg</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-amber-200">© 2023 Varalaxmi Homemade. All rights reserved.</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-amber-300 hover:text-white text-sm mr-4">Privacy Policy</a>
+                        <a href="#" class="text-amber-300 hover:text-white text-sm mr-4">Terms of Service</a>
+                        <a href="#" class="text-amber-300 hover:text-white text-sm">Shipping Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Product image lazy loading
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+            
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
